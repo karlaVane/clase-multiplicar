@@ -1,4 +1,5 @@
-//objeto
+//objeto con dos argumentos
+//OPTIMIZACIÓN
 let opc = {
     base: {
         demand: true,
@@ -10,7 +11,8 @@ let opc = {
     }
 }
 const argv = require('yargs')
-    .command('listar', 'Imprime en consola la tabla de multiplicar', opc)
+    //llama al vector de objetos creado
+    .command('listar', 'Imprime en consola la tabla de multiplicar', opc) //
     .command('crear', 'Crea un archivo la tabla de multiplicar', opc)
     .help().argv;
 
